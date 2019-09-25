@@ -36,7 +36,7 @@ namespace Forensic
             try
             {
                 firebaseClient = new FireSharp.FirebaseClient(investigatorConfiguration);
-                if (String.IsNullOrWhiteSpace(cmbInvestigatorCountry.SelectedItem.ToString()) || String.IsNullOrWhiteSpace(cmbInvestigatorCity.SelectedItem.ToString())
+                if (String.IsNullOrWhiteSpace(cmbInvestigatorCountry.Text) || String.IsNullOrWhiteSpace(cmbInvestigatorCity.Text)
                     || String.IsNullOrWhiteSpace(txtSequenceNumber.Text) || String.IsNullOrWhiteSpace(txtPassword.Password) ||
                     String.IsNullOrWhiteSpace(txtInvestigatorName.Text) || String.IsNullOrWhiteSpace(txtInvestigatorSurname.Text) || String.IsNullOrWhiteSpace(cmbInvestigatorRank.SelectedItem.ToString()) || String.IsNullOrWhiteSpace(txtConfidenceValue.Text))
                 {
@@ -172,44 +172,6 @@ namespace Forensic
             }
         }
 
-        private void txtConfidenceValue_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //convidenceValue = double.Parse(txtConfidenceValue.Text.Trim(), CultureInfo.InvariantCulture.NumberFormat);
-            //if (convidenceValue < 0.0 || convidenceValue > 1.0)
-            //{
-            //    MessageBox.Show("Convidence Value must be between 0.0 and 1.0. Please check your information and sumbit again", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
-            //else
-            //{
-            //    if (convidenceValue >= 0.0 || convidenceValue <= 0.2)
-            //    {
-            //        cmbInvestigatorRank.SelectedItem = "Constable";
-            //        rankCode = "DC";
-            //    }
-            //    else if (convidenceValue >= 0.21 || convidenceValue <= 0.4)
-            //    {
-            //        cmbInvestigatorRank.SelectedItem = "Sergeant";
-            //        rankCode = "DS";
-            //    }
-            //    else if (convidenceValue >= 0.41 || convidenceValue <= 0.6)
-            //    {
-            //        cmbInvestigatorRank.SelectedItem = "Inspector";
-            //        rankCode = "DI";
-            //    }
-            //    else if (convidenceValue >= 0.61 || convidenceValue <= 0.8)
-            //    {
-            //        cmbInvestigatorRank.SelectedItem = "Chief Inspetor";
-            //        rankCode = "DCI";
-            //    }
-            //    else if (convidenceValue >= 0.81 || convidenceValue <= 1.0)
-            //    {
-            //        cmbInvestigatorRank.SelectedItem = "Superintendent";
-            //        rankCode = "DSI";
-            //    }
-            //}
-
-        }
-
         private void cmbInvestigatorRank_Loaded(object sender, RoutedEventArgs e)
         {
             cmbInvestigatorRank.Items.Add("Junior"); // Junior Digital Forensic Investigator // Rank Code : JR
@@ -236,6 +198,26 @@ namespace Forensic
             {
                 rankCode = "MG";
             }
+        }
+
+        private void txtSequenceNumber_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex(@"[^0-9.]+").IsMatch(e.Text);
+        }
+
+        private void txtInvestigatorName_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex(@"[^\p{L}]+").IsMatch(e.Text);
+        }
+
+        private void txtInvestigatorSurname_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex(@"[^\p{L}]+").IsMatch(e.Text);
+        }
+
+        private void txtConfidenceValue_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex(@"[^0-9]+.").IsMatch(e.Text);
         }
     }
 }
