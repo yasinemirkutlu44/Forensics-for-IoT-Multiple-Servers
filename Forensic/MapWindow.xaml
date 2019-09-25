@@ -1,0 +1,26 @@
+﻿<Window x:Class="Forensic.MapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forensic"
+        mc:Ignorable="d"
+        xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        Title="Map of Devices" Height="600" Width="1300" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDAB9" Offset="0"/>
+                <GradientStop Color="#FFDAB9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblIssueCountry" Content="Country of Issue " Margin="1030,350,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblIssueCity" Content="City of Issue" Margin="1030,400,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblDeviceID" Content="Device ID" Margin="1030,450,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbIssueCountry" HorizontalAlignment="Left" Height="25" Margin="1150,350,0,0" VerticalAlignment="Top" Width="124" Loaded="cmbIssueCountry_Loaded" SelectionChanged="cmbIssueCountry_SelectionChanged" TabIndex="1"/>
+        <ComboBox x:Name="cmbIssueCity" HorizontalAlignment="Left" Height="25" Margin="1150,400,0,0" VerticalAlignment="Top" Width="124" TabIndex="2" SelectionChanged="cmbIssueCity_SelectionChanged"/>
+        <TextBox x:Name="txtDeviceID" HorizontalAlignment="Left" Height="26" Margin="1150,450,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" PreviewTextInput="txtDeviceID_PreviewTextInput"  TabIndex="3"/>
+        <Button x:Name="btnTraceDevices" Content="Trace Devices" HorizontalAlignment="Left" Height="26" Margin="1150,500,0,0" VerticalAlignment="Top" Width="120" Click="btnTraceDevices_Click"  TabIndex="7"/>
+        <gmaps:GMapControl x:Name="Gmap" Loaded="Gmap_Loaded" Height="570" Width="1000" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>

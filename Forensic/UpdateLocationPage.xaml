@@ -1,0 +1,29 @@
+﻿<Window x:Class="Forensic.UpdateLocationPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forensic"
+        mc:Ignorable="d"
+        Title="Update the Location" Height="300" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF003972" Offset="0"/>
+                <GradientStop Color="#FFB2D9FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblLatitude" Content="Latitude" Margin="30,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblLongitude" Content="Longitude" Margin="30,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblIssueCountry" Content="Country of Issue " Margin="30,110,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblIssueCity" Content="City of Issue" Margin="30,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblDeviceID" Content="DeviceID" Margin="30,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbIssueCountry" HorizontalAlignment="Left" Height="25" Margin="125,110,0,0" VerticalAlignment="Top" Width="124" Loaded="cmbIssueCountry_Loaded" SelectionChanged="cmbIssueCountry_SelectionChanged"/>
+        <ComboBox x:Name="cmbIssueCity" HorizontalAlignment="Left" Height="25" Margin="125,140,0,0" VerticalAlignment="Top" Width="124" SelectionChanged="cmbIssueCity_SelectionChanged"/>
+        <TextBox x:Name="txtLatitude" HorizontalAlignment="Left" Height="26" Margin="125,50,0,0" VerticalAlignment="Top" Width="124"  MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" PreviewTextInput="txtLatitude_PreviewTextInput" TabIndex="1"/>
+        <TextBox x:Name="txtLongitude" HorizontalAlignment="Left" Height="26" Margin="125,80,0,0" VerticalAlignment="Top" Width="124"  MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" PreviewTextInput="txtLongitude_PreviewTextInput" TabIndex="2" />
+        <TextBox x:Name="txtDeviceID" HorizontalAlignment="Left" Height="26" Margin="125,170,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center"  TabIndex="3"/>
+        <Button x:Name="btnUpdateLocation" Content="Update Location" HorizontalAlignment="Left" Height="26" Margin="200,220,0,0" VerticalAlignment="Top" Width="120"  TabIndex="4" Click="btnUpdateLocation_Click"/>
+        <Button x:Name="btnGetCurrentLocation" Content="Current Location" HorizontalAlignment="Left" Height="26" Margin="30,220,0,0" VerticalAlignment="Top" Width="120" TabIndex="5" Click="btnGetCurrentLocation_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+Previous Latitude:41.902782 Previous Longitude:12.496365 Unique Device Code: ITRM1  Country of Issue:Italy  City of Issue:Rome  Owner:Lieto Ciarcia  User:Lieto Ciarcia Device Type:Smartphones Device Name:HTC U12+
+Current Latitude:57.149715 Current Longitude:-2.094278 Unique Device Code: ITRM1  Country of Issue:Italy  City of Issue:Rome  Owner:Lieto Ciarcia  User:Lieto Ciarcia Device Type:Smartphones Device Name:HTC U12+
+Previous Latitude:57.149715 Previous Longitude:-2.094278 Unique Device Code: ITRM1  Country of Issue:Italy  City of Issue:Rome  Owner:Lieto Ciarcia  User:Lieto Ciarcia Device Type:Smartphones Device Name:HTC U12+
+Current Latitude:57.477772 Current Longitude:-4.224721 Unique Device Code: ITRM1  Country of Issue:Italy  City of Issue:Rome  Owner:Lieto Ciarcia  User:Lieto Ciarcia Device Type:Smartphones Device Name:HTC U12+
+Previous Latitude:46.947975 Previous Longitude:7.447447 Unique Device Code: ITNP3  Country of Issue:Italy  City of Issue:Naples  Owner:Valtena Abela  User:Rutilo Abela Device Type:Laptop or Desktop Computer Device Name:Apple MacBook Pro
+Current Latitude:49.492592 Current Longitude:0.106500 Unique Device Code: ITNP3  Country of Issue:Italy  City of Issue:Naples  Owner:Valtena Abela  User:Rutilo Abela Device Type:Laptop or Desktop Computer Device Name:Apple MacBook Pro

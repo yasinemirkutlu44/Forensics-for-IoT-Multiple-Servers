@@ -1,0 +1,2 @@
+Previous Latitude:41.385063 Previous Longitude:2.173404 Unique Device Code: SPBC1  Country of Issue:Spain  City of Issue:Barcelona  Owner:Ivan Carvallo  User:Daniel Cotilla Device Type:Tablets Device Name:Apple Ipad Air
+Current Latitude:59.913868 Current Longitude:10.752245 Unique Device Code: SPBC1  Country of Issue:Spain  City of Issue:Barcelona  Owner:Ivan Carvallo  User:Daniel Cotilla Device Type:Tablets Device Name:Apple Ipad Air

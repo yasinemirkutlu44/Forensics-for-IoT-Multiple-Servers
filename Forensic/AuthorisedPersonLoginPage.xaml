@@ -1,0 +1,30 @@
+﻿<Window x:Class = "Forensic.AuthorisedPersonLoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forensic"
+        mc:Ignorable="d"
+        Title="Login to Device Information Centre" Height="290" Width="300" ResizeMode="CanMinimize" WindowStartupLocation="CenterOwner">
+    <Grid x:Name="Grid">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF003972" Offset="0"/>
+                    <GradientStop Color="#FFB2D9FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        <Label x:Name="lblAuthorisedID" Content="Authorised Login Key" Margin="15,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblAuthorisedPassword" Content="Password" Margin="15,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblInvestigatorCountry" Content="Investigator's Country" Margin="15,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblInvestigatorCity" Content="Investigator's City" Margin="15,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblInvestigatorRank" Content="Investigator's Rank" Margin="15,90,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblSequenceNumber" Content="Sequence Number" Margin="15,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAuthorisedAuthKey" HorizontalAlignment="Left" Height="26" Margin="150,180,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="1"/>
+        <TextBox x:Name="txtInvestigatorSequence" HorizontalAlignment="Left" Height="26" Margin="150,120,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="2" PreviewTextInput="txtInvestigatorSequence_PreviewTextInput"/>
+        <PasswordBox x:Name="txtAuthorisedPassword" HorizontalAlignment="Left" Height="26" Margin="150,150,0,0" VerticalAlignment="Top" Width="124" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbInvestigatorCountry" HorizontalAlignment="Left" Height="25" Margin="150,30,0,0" VerticalAlignment="Top" Width="124" Loaded="cmbInvestigatorCountry_Loaded" SelectionChanged="cmbInvestigatorCountry_SelectionChanged" />
+        <ComboBox x:Name="cmbInvestigatorCity" HorizontalAlignment="Left" Height="25" Margin="150,60,0,0" VerticalAlignment="Top" Width="124" SelectionChanged="cmbInvestigatorCity_SelectionChanged"/>
+        <ComboBox x:Name="cmbInvestigatorRank" HorizontalAlignment="Left" Height="25" Margin="150,90,0,0" VerticalAlignment="Top" Width="124" Loaded="cmbInvestigatorRank_Loaded" SelectionChanged="cmbInvestigatorRank_SelectionChanged"/>
+        <Button x:Name="btnAuthorisedLogin" Content="Login" HorizontalAlignment="Left" Height="26" Margin="150,220,0,0" VerticalAlignment="Top" Width="124" Click="btnAuthorisedLogin_Click"/>
+    </Grid>
+</Window>

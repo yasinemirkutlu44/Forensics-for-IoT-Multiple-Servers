@@ -1,0 +1,8 @@
+Previous Latitude:41.902782 Previous Longitude:12.496365 Device ID: 1  Country of Issue:Germany  City of Issue:Berlin  Owner:Tobias Mucke  User:Tobias Mucke Device Type:Laptop or Desktop Computer Device Name:Lenovo V330
+Current Latitude:44.426765 Current Longitude:26.102537 Device ID: 1  Country of Issue:Germany  City of Issue:Berlin  Owner:Tobias Mucke  User:Tobias Mucke Device Type:Laptop or Desktop Computer Device Name:Lenovo V330
+Previous Latitude:51.01518 Previous Longitude:6.9151 Device ID: 2  Country of Issue:Germany  City of Issue:Cologne  Owner:Carl Wilhelm  User:Mike Wilhelm Device Type:Smartphones Device Name:Google Pixel 3 XL
+Current Latitude:45.815010 Current Longitude:15.981919 Device ID: 2  Country of Issue:Germany  City of Issue:Cologne  Owner:Carl Wilhelm  User:Mike Wilhelm Device Type:Smartphones Device Name:Google Pixel 3 XL
+Previous Latitude:50.793981 Previous Longitude:-1.097023 Device ID: 1  Country of Issue:Germany  City of Issue:Cologne  Owner:Mike Steinbach  User:Mike Steinbach Device Type:Laptop or Desktop Computer Device Name:Monster Tulpa
+Current Latitude:40.409264 Current Longitude:49.867092 Device ID: 1  Country of Issue:Germany  City of Issue:Cologne  Owner:Mike Steinbach  User:Mike Steinbach Device Type:Laptop or Desktop Computer Device Name:Monster Tulpa
+Previous Latitude:52.549302 Previous Longitude:13.342987 Device ID: 2  Country of Issue:Germany  City of Issue:Berlin  Owner:Wenzel Nemetz  User:Adolar Nemetz Device Type:Laptop or Desktop Computer Device Name:ASUS VivoBook
+Current Latitude:53.904541 Current Longitude:27.561523 Device ID: 2  Country of Issue:Germany  City of Issue:Berlin  Owner:Wenzel Nemetz  User:Adolar Nemetz Device Type:Laptop or Desktop Computer Device Name:ASUS VivoBook
