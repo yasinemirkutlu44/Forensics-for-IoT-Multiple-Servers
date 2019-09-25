@@ -52,7 +52,7 @@ namespace Forensic
             //DataGridView.ItemsSource = dt;
 
 
-            MessageBox.Show("All data are sorted successfully", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Has not Implemented yet", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
 
