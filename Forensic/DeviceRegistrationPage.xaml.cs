@@ -9,7 +9,6 @@ using System.Windows.Controls;
 using System.Device.Location;
 using System.Net;
 using System.Net.Sockets;
-using Google.Cloud.Firestore;
 using System.Globalization;
 
 namespace Forensic
@@ -118,7 +117,7 @@ namespace Forensic
             {
                 MessageBox.Show("No network adapters with an IPv4 address in the system", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            return ipv4Addresses[1];//IPv4 Address
+            return ipv4Addresses[0];//IPv4 Address
         }
 
         private void cmbIssueCountry_Loaded(object sender, RoutedEventArgs e)
