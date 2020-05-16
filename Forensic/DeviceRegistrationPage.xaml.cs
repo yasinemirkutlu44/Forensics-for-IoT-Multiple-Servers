@@ -30,9 +30,8 @@ namespace Forensic
 
         IFirebaseConfig config = new FirebaseConfig()
         {
-            AuthSecret = "kXL5Grc0d1ieUW7TElhTcqooUaE0Jc8oYQSpUIxz",
-            BasePath = "https://iotservers.firebaseio.com/"
-
+            AuthSecret = "jnANrKs9KTRWCvwhgkgvMQIJVAWNBi4uVHFlG1dY",
+            BasePath = "https://iotcountries.firebaseio.com/"
         };
 
         IFirebaseClient firebaseClient;

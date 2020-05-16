@@ -20,12 +20,12 @@ namespace Forensic
         DataTable dt = new DataTable();
         StreamReader file = null;
 
-        IFirebaseConfig config = new FirebaseConfig()
-        {
-            AuthSecret = "kXL5Grc0d1ieUW7TElhTcqooUaE0Jc8oYQSpUIxz",
-            BasePath = "https://iotservers.firebaseio.com/"
+        //IFirebaseConfig config = new FirebaseConfig()
+        //{
+        //    AuthSecret = "kXL5Grc0d1ieUW7TElhTcqooUaE0Jc8oYQSpUIxz",
+        //    BasePath = "https://iotservers.firebaseio.com/"
 
-        };
+        //};
 
 
         private void ReadShowData()
