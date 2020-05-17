@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Forensic"
         mc:Ignorable="d"
-        Title="Choose an option to continue" Height="150" Width="400">
+        Title="Choose an option to continue" Height="150" Width="580">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,5 +15,6 @@
         </Grid.Background>
         <Button x:Name="btnSortDevices" Content="Sort Devices" HorizontalAlignment="Left" Height="26" Margin="50,50,0,0" VerticalAlignment="Top" Width="120" Click="btnSortDevices_Click" TabIndex="1"/>
         <Button x:Name="btnDevicesMap" Content="Show Devices on Map" HorizontalAlignment="Left" Height="26" Margin="230,50,0,0" VerticalAlignment="Top" Width="123" Click="btnDevicesMap_Click" TabIndex="2"/>
+        <Button x:Name="btnInvestigateDevice" Content="Investigate a Device" HorizontalAlignment="Left" Height="26" Margin="400,50,0,0" VerticalAlignment="Top" Width="123" Click="btnInvestigateDevice_Click" TabIndex="3"/>
     </Grid>
 </Window>

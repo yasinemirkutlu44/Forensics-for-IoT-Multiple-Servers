@@ -314,6 +314,9 @@
     </Compile>
     <Compile Include="Classes\Device.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="DeviceInvestigation.xaml.cs">
+      <DependentUpon>DeviceInvestigation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DeviceRegistrationPage.xaml.cs">
       <DependentUpon>DeviceRegistrationPage.xaml</DependentUpon>
     </Compile>
@@ -342,6 +345,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreateAccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceInvestigation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

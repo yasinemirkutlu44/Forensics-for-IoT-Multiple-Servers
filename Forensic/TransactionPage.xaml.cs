@@ -36,5 +36,11 @@ namespace Forensic
             MapWindow googleMapwindow = new MapWindow();
             googleMapwindow.ShowDialog();
         }
+        private void btnInvestigateDevice_Click(object sender, RoutedEventArgs e)
+        {
+            DeviceInvestigation deviceInvestigation = new DeviceInvestigation();
+            deviceInvestigation.ShowDialog();
+
+        }
     }
 }
