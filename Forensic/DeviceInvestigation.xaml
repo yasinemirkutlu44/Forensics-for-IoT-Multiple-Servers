@@ -16,11 +16,30 @@
         </Grid.Background>
         <Label x:Name="lblIssueCountry" Content="Country of Issue " Margin="340,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label x:Name="lblIssueCity" Content="City of Issue" Margin="360,250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label x:Name="lblDeviceID" Content="Device ID" Margin="370,290,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblOwnerName" Content="Owner " Margin="20,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblUserName" Content="User" Margin="20,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblIMEINumber" Content="IMEI Num." Margin="20,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblIPAddress" Content="IP Address" Margin="20,210,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblSerialNumber" Content="Serial Num." Margin="20,240,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblDeviceType" Content="Device Type" Margin="20,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblLatitude" Content="Latitude" Margin="20,300,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblLongitude" Content="Longitude" Margin="20,330,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblDeviceID" Content="Device ID" Margin="360,290,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbCountries" HorizontalAlignment="Left" Height="25" Margin="440,210,0,0" VerticalAlignment="Top" Width="124" Loaded="cmbCountries_Loaded" SelectionChanged="cmbCountries_SelectionChanged" TabIndex="1"/>
         <ComboBox x:Name="cmbCities" HorizontalAlignment="Left" Height="25" Margin="440,250,0,0" VerticalAlignment="Top" Width="124" SelectionChanged="cmbCities_SelectionChanged" TabIndex="2"/>
         <TextBox x:Name="txtDeviceID" HorizontalAlignment="Left" Height="26" Margin="440,290,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" PreviewTextInput="txtDeviceID_PreviewTextInput"  TabIndex="2"/>
         <Button x:Name="btnTraceDevices" Content="Investigate Device" HorizontalAlignment="Left" Height="26" Margin="440,330,0,0" VerticalAlignment="Top" Width="120" Click="btnTraceDevices_Click"  TabIndex="3"/>
-        <TextBox x:Name ="txtFinalMessage" HorizontalAlignment="Left" Height="279" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="325" Margin="10,30,0,0"/>
+        <TextBox x:Name ="txtFinalMessage" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Margin="10,30,0,0"/>
+        <TextBox x:Name="txtOwnerName" HorizontalAlignment="Left" Height="26" Margin="100,120,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center"  TabIndex="4"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="26" Margin="100,150,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="5"/>
+        <TextBox x:Name="txtIMEINumber" HorizontalAlignment="Left" Height="26" Margin="100,180,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center"  TabIndex="6"/>
+        <TextBox x:Name="txtIPAddress" HorizontalAlignment="Left" Height="26" Margin="100,210,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center"  TabIndex="7"/>
+        <TextBox x:Name="txtSerialNumber" HorizontalAlignment="Left" Height="26" Margin="100,240,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="8"/>
+        <TextBox x:Name="txtDeviceType" HorizontalAlignment="Left" Height="26" Margin="100,270,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="9"/>
+        <TextBox x:Name="txtLatitude" HorizontalAlignment="Left" Height="26" Margin="100,300,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center"  TabIndex="10"/>
+        <TextBox x:Name="txtLongitude" HorizontalAlignment="Left" Height="26" Margin="100,330,0,0" VerticalAlignment="Top" Width="124" MaxLines="1" MaxLength="24" VerticalContentAlignment="Center" TabIndex="11"/>
+     
+        
+
     </Grid>
 </Window>
