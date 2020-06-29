@@ -1,4 +1,1 @@
-# Forensics-for-IoT-Multiple-Servers
-Secure Data Sharing Process Among Countries
-Users can create an account. They can login with their username and password.
-Admin also can add User and Investigator.
+Proje kaynak kodlarının nasıl çalıştırılabileceğini hazırlanmış olan ASCIIDOC kullanılarak hazırlanmış olan README.pdf dosyasını indirerek öğrenebilirsiniz. 
